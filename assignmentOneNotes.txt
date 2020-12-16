@@ -1,0 +1,91 @@
+add	            0	                32			000000ssssstttttddddd00000100000
+sub	            0	                34			000000ssssstttttddddd00000100010
+mul	            28	                2			011100ssssstttttddddd00000000010
+and	            0	                36			000000ssssstttttddddd00000100100
+or	            0                   37			000000ssssstttttddddd00000100101
+xor	            0	                38			000000ssssstttttddddd00000100110
+sllv	        0	                4			000000ssssstttttddddd00000000100
+srlv	        0	                6			000000ssssstttttddddd00000000110
+slt	            0	                42			000000ssssstttttddddd00000101010
+$d $s $t
+
+addi	        8	                -			001000ssssstttttIIIIIIIIIIIIIIII
+andi	        12	                -			001100ssssstttttIIIIIIIIIIIIIIII
+ori	            13	                -			001101ssssstttttIIIIIIIIIIIIIIII
+xori	        14	                -			001110ssssstttttIIIIIIIIIIIIIIII
+sll	            0	                0			00000000000tttttdddddIIIII000000
+srl	            0	                2			00000000000tttttdddddIIIII000010
+slti	        10	                -			001010ssssstttttIIIIIIIIIIIIIIII
+$d, $s, I
+
+lui	            480	                -			00111100000tttttIIIIIIIIIIIIIIII
+$t, I
+
+lb	            32	                0			100000bbbbbtttttOOOOOOOOOOOOOOOO
+lh	            33	                0			100001bbbbbtttttOOOOOOOOOOOOOOOO
+lw	            35	                0			100011bbbbbtttttOOOOOOOOOOOOOOOO
+sb	            40	                0			101000bbbbbtttttOOOOOOOOOOOOOOOO
+sh	            41	                0			101001bbbbbtttttOOOOOOOOOOOOOOOO
+sw	            43	                0			101011bbbbbtttttOOOOOOOOOOOOOOOO
+$t, 0($b)
+
+beq	            4	                -			000100ssssstttttIIIIIIIIIIIIIIII
+bne	            5	                -			000101ssssstttttIIIIIIIIIIIIIIII
+$s, $t, I
+
+blez	        6	    -	        0			000110sssss00000IIIIIIIIIIIIIIII
+bgtz	        7	    -	        0			000111sssss00000IIIIIIIIIIIIIIII
+bltz	        1	    -	        0			000001sssss00000IIIIIIIIIIIIIIII
+bgez	        1	    -	        1			000001sssss00001IIIIIIIIIIIIIIII
+$s, I
+
+j	            2	    -	        -			000010XXXXXXXXXXXXXXXXXXXXXXXXXX
+jal	            3	    -	        -			000011XXXXXXXXXXXXXXXXXXXXXXXXXX
+X
+
+jr	            0	    -	  -	    8		    000000sssss000000000000000001000
+$s
+
+syscall	    12	                                00000000000000000000000000001100
+
+
+
+
+
+
+
+
+PART 2 LIST:
+add		    DONE
+sub		    DONE
+mul		    DONE
+and		    DONE
+or		    DONE
+xor		    DONE
+sllv		DONE
+srlv		DONE
+slt		    DONE
+addi		DONE
+andi		DONE
+ori		    DONE
+xori		DONE
+sll		    DONE
+srl		    DONE
+slti		DONE
+lui		    DONE
+lb		    DONE
+lh		    DONE
+lw		    DONE
+sb		    DONE
+sh		    DONE
+sw		    DONE
+beq		    DONE
+bne		    DONE
+blez		DONE
+bgtz		DONE
+bltz		DONE
+bgez		DONE
+j		    DONE
+jal		    DONE
+jr		    DONE
+syscall		DONE
